@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- Form
+            attributes:
+                action = (reciever) where should form-date go after it is submitted
+                method = (how) how the form-data is passed / how to collect the data
+            form controls
+                ->are used to control the different data or
+             -->
+    <form action="https://kredo.jp/online/lp/freelance-6/?utm_term=kredo%20%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%20%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97&utm_campaign=%E3%80%90%E6%8C%87%E5%90%8D%E3%80%91&utm_source=adwords&utm_medium=ppc&hsa_acc=1669822909&hsa_cam=12183149174&hsa_grp=117450780175&hsa_ad=640172016209&hsa_src=g&hsa_tgt=kwd-1283693312530&hsa_kw=kredo%20%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%20%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAiAv9ucBhBXEiwA6N8nYMKCALHjmkF_EMb-ZOalD07qFnQC1de2o6bAi4QcnMkJIPMF9SF6cRoCmGkQAvD_BwE" method="get">
+       
+       <!-- text -->
+        <label for="first-name">First Name</label>
+        <input type="text" name="first-name" id="first-name" placeholder="First Name" required minlength="4">
+
+        <label for="last-name">Last Name</label>
+        <input type="text" name="last-name" id="last-name" placeholder="Last Name" required maxlength="6">
+        <br><br>
+        
+        <!-- password -->
+        <label for=""></label>
+        <input type="password" name="user-password" id="password" placeholder="Password">
+        <br><br>
+
+        <!-- number -->
+        <label for="contact_number">Age</label>
+        <input type="number" name="age" id="age" placeholder="age" min="18" max="65">
+        <br><br>
+
+        <!-- date -->
+        <label for="date">Date</label>
+        <input type="date" name="" id="">
+        <br><br>
+
+        <!-- email -->
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email">
+        <br><br>
+
+        <!-- comment / textarea -->
+        <label for="comment">Comments</label>
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="comments here!!"></textarea>
+        <br><br>
+
+        <!-- radio button -->
+        <p>Select Gender</p>
+        <input type="radio" name="gender" id="">
+        <label for="female">Female</label>
+
+        <input type="radio" name="gender" id="">
+        <label for="male">Male</label>
+        <br><br>
+        
+        <!-- check box -->
+        <p>Please select your favorite food:</p>
+
+        <input type="checkbox" name="fav_food" id="">
+        <label for="ramen">ramen</label>
+
+        <input type="checkbox" name="fav_food" id="sushi">
+        <label for="sushi">Sushi</label>
+
+        <input type="checkbox" name="fav_food" id="curry">
+        <label for="curry">Curry</label>
+        <br><br>
+
+        <!-- kdropdown list /bos -->
+        <p>What is your device:</p>
+        <select name="device" id="device">
+            <option value="" hidden>Select Device</option>
+            <option value="Macbook">Macbook</option>
+            <option value="ipad">iPad</option>
+            <option value="iphone">iPhone</option>
+        </select>
+        <br><br>
+
+        <!-- select multiple -->
+        <p>Select a Car:</p>
+        <select name="car" id="car" multiple>
+            <option value=""hidden>select a car</option>
+            <option value="toyoda">Toyota</option>
+            <option value="suzuki">Suzuki</option>
+            <option value="nissan">Nissan</option>
+        </select>
+        <br><br>
+
+        <!-- file -->
+        <p>Profile</p>
+        <input type="file" name="profile" id="profile">
+        <br><br>
+
+        <!-- buttons -->
+        <br><br>
+       <input type="submit" value="send" name="submit">
+       <input type="image" src="assets/images/submit-button.png" alt="Button image" width="100px">
+      <button type="submit" name="submit">Submit</button>
+      <input type="reset" value="RESET">
+
+      <!-- Form Validation
+            attributes:
+                    for characters/text only
+                required = must fill data 
+                minlength = check the minimum nos. of text
+                maxlength = check maximum text
+
+                    for numbers only
+                min = minimum number
+                max = maximum number
+            -->
+    </form>
+</body>
+</html>
